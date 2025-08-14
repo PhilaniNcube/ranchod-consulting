@@ -139,6 +139,91 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Import/Export Specialization */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <div className="space-y-6">
+              <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+                Import & Export Solutions
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Ranchod Consulting specializes in connecting South African
+                importers with reliable suppliers worldwide, creating pathways
+                for business growth and expansion. We have cultivated strong
+                relationships with international companies eager to collaborate,
+                with India serving as a key focus area given its strategic
+                importance as a trading partner for South Africa.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Through annual participation at prominent trade shows including
+                IESS and ELECRAMA, we continuously expand our network and
+                identify the most promising suppliers tailored to your specific
+                requirements. Whether you're seeking alternative supply chains
+                or exploring new partnership opportunities, our expertise guides
+                you through every step of the international trade process.
+              </p>
+            </div>
+
+            {/* Key Benefits */}
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                Our Global Network
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Reliable International Partnerships
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Established relationships with verified suppliers
+                      worldwide
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Strategic Trade Show Presence
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Annual attendance at IESS, ELECRAMA, and other key events
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      India Market Expertise
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Specialized knowledge of South Africa-India trade dynamics
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">
+                      Supply Chain Alternatives
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      Comprehensive solutions for diversifying your supplier
+                      base
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

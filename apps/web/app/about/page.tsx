@@ -5,7 +5,7 @@ export default function AboutPage() {
       <section className="py-20 px-6 bg-gradient-to-br from-brand to-gray-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">About Ranchod Consulting</h1>
-          <div className="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
+
           <p className="text-xl leading-relaxed opacity-90">
             Professional consultants for the SMME business sector, established
             in 2003 with a commitment to excellence and innovation.

@@ -40,7 +40,7 @@ const HomePageHero = () => {
             <Button
               size="lg"
               variant="outline"
-              className=" text-white rounded-full px-8 py-3 text-lg bg-brand"
+              className=" text-white rounded-full px-8 py-3 text-lg bg-[#1e3a8a]"
             >
               Contact Us
             </Button>

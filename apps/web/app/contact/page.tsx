@@ -74,7 +74,17 @@ export default function ContactPage() {
               
               <div className="space-y-4 text-gray-700">
                 <p>Tel: +27 (0)41 368 5700</p>
-                <p>Cell: +27 (0)83 629 4050</p>
+                <p>
+                  Cell:{" "}
+                  <a
+                    href="https://wa.me/27836294050"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#1e3a8a] hover:underline transition-colors"
+                  >
+                    +27 (0)83 629 4050
+                  </a>
+                </p>
                 <p>Email: info@ranchodconsulting.co.za</p>
               </div>
 

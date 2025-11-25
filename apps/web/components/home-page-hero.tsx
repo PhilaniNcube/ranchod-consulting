@@ -18,30 +18,31 @@ const HomePageHero = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Ranchod
-          <span className="block text-brand">Consulting</span>
+        <h1 className="text-lg lg:text-4xl font-bold mb-6 leading-tight">
+          Ranchod Consulting and its associates are professional consultants for
+          the SMME business sector
         </h1>
-        <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-          Empowering SMME businesses with cutting-edge solutions and creative
-          strategies
+        <p className="text-md mb-8 leading-relaxed opacity-90">
+          We employ cutting edge methodology and techniques and use creative
+          ideas to give our clients the most appropriate solutions to their
+          specific challenges.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/services">
+            <Button
+              size="lg"
+              className="bg-green-800 rounded-full hover:bg-green-700 text-white px-8 py-3 text-lg"
+            >
+              View Services
+            </Button>
+          </Link>
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-brand hover:bg-brand/85 text-white px-8 py-3 text-lg"
-            >
-              Get Started
-            </Button>
-          </Link>
-          <Link href="/about">
-            <Button
-              size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg bg-transparent"
+              className=" text-white rounded-full px-8 py-3 text-lg bg-brand"
             >
-              Learn More
+              Contact Us
             </Button>
           </Link>
         </div>

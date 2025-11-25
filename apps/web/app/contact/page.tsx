@@ -27,7 +27,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Main Contact Information */}
             <div className="space-y-8">
-              <Card className="border-2 border-brand/20">
+              <Card className="border-2 border-brand/20 bg-white">
                 <CardHeader>
                   <CardTitle className="text-brand text-2xl">
                     Get in Touch
@@ -97,7 +97,7 @@ export default function ContactPage() {
 
             {/* Why Choose Us */}
             <div className="space-y-8">
-              <Card>
+              <Card className="border-2 border-brand/20 bg-white">
                 <CardHeader>
                   <CardTitle className="text-brand text-2xl">
                     Why Choose Ranchod Consulting?
@@ -149,7 +149,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2 border-brand/20 bg-white">
                 <CardHeader>
                   <CardTitle className="text-brand text-xl">
                     Business Hours

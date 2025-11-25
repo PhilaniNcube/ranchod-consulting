@@ -2,16 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@workspace/ui/components/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "@workspace/ui/components/navigation-menu";
 import {
   Sheet,
   SheetContent,
@@ -31,9 +26,10 @@ const navigationItems = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex mx-auto items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link href="/" className="flex py-2 items-center space-x-2">
@@ -47,24 +43,21 @@ export function Navigation() {
         </Link>
 
         {/* Desktop Navigation */}
-        <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList className="flex gap-1">
-            {navigationItems.map((item) => (
-              <NavigationMenuItem key={item.name}>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href={item.href}
-                    className={cn(
-                      "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm md:text-lg font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            ))}
-          </NavigationMenuList>
-        </NavigationMenu>
+        <nav className="hidden md:flex  items-center gap-4">
+          {navigationItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={cn(
+                "group inline-flex h-10 text-black w-max items-center justify-center rounded-md bg-white py-2 text-sm md:text-lg font-medium transition-colors hover:text-brand disabled:pointer-events-none disabled:opacity-50",
+                pathname === item.href &&
+                  "text-brand border-b-2 border-brand rounded-none"
+              )}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
 
         {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -97,7 +90,11 @@ export function Navigation() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="block rounded-md px-3 py-2 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                      className={cn(
+                        "block rounded-md px-3 py-2 text-base font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground",
+                        pathname === item.href &&
+                          "text-brand border-b-2 border-brand rounded-none"
+                      )}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
@@ -112,7 +109,9 @@ export function Navigation() {
         {/* CTA Button - Desktop only */}
         <div className="hidden md:flex">
           <Button asChild className="bg-brand">
-            <Link href="/contact">Get Started</Link>
+            <Link href="/contact" className="text-white hover:text-brand ">
+              Get Started
+            </Link>
           </Button>
         </div>
       </div>

@@ -1,31 +1,8 @@
 import HomePageHero from "@/components/home-page-hero";
-import { Button } from "@workspace/ui/components/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@workspace/ui/components/card";
+
 
 export default function HomePage() {
-  const features = [
-    {
-      title: "Strategic Consulting",
-      description:
-        "Expert guidance to drive your business strategy and growth.",
-    },
-    {
-      title: "Operational Excellence",
-      description:
-        "Optimize your operations for maximum efficiency and results.",
-    },
-    {
-      title: "Digital Transformation",
-      description:
-        "Navigate the digital landscape with confidence and expertise.",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen">

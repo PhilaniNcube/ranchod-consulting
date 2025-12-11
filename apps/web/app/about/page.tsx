@@ -1,3 +1,7 @@
+"use client";
+
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
@@ -107,33 +111,49 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Automotive Industry Development Centre",
-              "East Cape Automotive Industry Cluster (DEDEAT)",
-              "Imizi Housing Utility",
-              "Automotive Industry Development Centre (AIDC - EC)",
-              "South African National Parks",
-              "PriceWaterhouse Coopers (PWC)",
-              "Kalan Truck and Driver",
-              "Volkswagen of SA",
-              "Nelson Mandela Metropolitan Municipality Fleet management assessment",
-              "East Cape Dept. of Health Pharma distribution and outsourcing",
-              "Nelspruit Municipality Fleet management review",
-              "Footloose Shoes (CC)",
-              "NYDA (National Youth Development Agency)",
-              "East Cape Legislature",
-              "NMU (Nelson Mandela University)",
-              "Engeli Enterprise Development",
-              "IDC",
-              "NYDA",
-              "ECDC",
-              "NEFCORP",
-              "SEFDA",
+              { name: "Automotive Industry Development Centre", logo: "/images/company-logos/aidc.webp" },
+              { name: "East Cape Automotive Industry Cluster (DEDEAT)", logo: "/images/company-logos/DEDEAT.webp" },
+              { name: "Imizi Housing Utility", logo: "/images/company-logos/imizi.webp" },
+              { name: "Automotive Industry Development Centre (AIDC - EC)", logo: "/images/company-logos/aidc-ec.webp" },
+              { name: "South African National Parks", logo: "/images/company-logos/sanparks.webp" },
+              { name: "PriceWaterhouse Coopers (PWC)", logo: "/images/company-logos/pwc.webp" },
+              { name: "Kalan Truck and Driver", logo: "/images/company-logos/aidc.webp" },
+              { name: "Volkswagen of SA", logo: "/images/company-logos/vw.webp" },
+              { name: "Nelson Mandela Metropolitan Municipality Fleet management assessment", logo: "/images/company-logos/nmbm.webp" },
+              { name: "East Cape Dept. of Health Pharma distribution and outsourcing", logo: "/images/company-logos/ecdh.webp" },
+              { name: "Nelspruit Municipality Fleet management review", logo: "/images/company-logos/nelspruit.webp" },
+              { name: "Footloose Shoes (CC)", logo: "/images/company-logos/footloose.webp" },
+              { name: "NYDA (National Youth Development Agency)", logo: "/images/company-logos/nyda.webp" },
+              { name: "East Cape Legislature", logo: "/images/company-logos/ec-legislature.webp" },
+              { name: "NMU (Nelson Mandela University)", logo: "/images/company-logos/nmu.webp" },
+              { name: "Engeli Enterprise Development", logo: "/images/company-logos/engeli.webp" },
+              { name: "IDC", logo: "/images/company-logos/idc.webp" },
+              { name: "ECDC", logo: "/images/company-logos/ecdc.webp" },
+              { name: "NEFCORP", logo: "/images/company-logos/nerfcorp.webp" },
+              { name: "SEDFA", logo: "/images/company-logos/sefda.webp" },
             ].map((company, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-amber-600 hover:shadow-md transition-shadow"
+                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-all hover:border-amber-600 group"
               >
-                <p className="text-gray-700 text-sm font-medium">{company}</p>
+                <div className="flex flex-col items-center space-y-4">
+                  <div className="w-1/2 relative flex items-center justify-center rounded-lg overflow-hidden group-hover:bg-amber-50 transition-colors">
+                    <Image
+                      src={company.logo}
+                      alt={`${company.name} logo`}
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-contain p-2"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(company.name.split(' ')[0] || company.name)}&background=D97706&color=fff&size=128`;
+                      }}
+                    />
+                  </div>
+                  <p className="text-gray-700 text-sm font-medium text-center leading-tight">
+                    {company.name}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

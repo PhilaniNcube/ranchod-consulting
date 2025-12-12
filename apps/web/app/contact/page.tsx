@@ -2,7 +2,14 @@ import { Input } from "@workspace/ui/components/input";
 import { Textarea } from "@workspace/ui/components/textarea";
 import { Label } from "@workspace/ui/components/label";
 import { Button } from "@workspace/ui/components/button";
-import { Facebook, Instagram, Linkedin, Youtube, ThumbsUp, Phone } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Youtube,
+  ThumbsUp,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
 
 export default function ContactPage() {
@@ -26,13 +33,15 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left Column - Text */}
             <div className="space-y-6">
-              <h2 className="text-5xl font-bold text-[#1e3a8a]">Get in Touch</h2>
+              <h2 className="text-5xl font-bold text-[#1e3a8a]">
+                Get in Touch
+              </h2>
               <h3 className="text-xl font-semibold text-[#1e3a8a]">
                 I'd like to hear from you!
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed max-w-md">
-                If you have any inquiries, want more information, or just want to
-                say hi, please use the contact form!
+                If you have any inquiries, want more information, or just want
+                to say hi, please use the contact form!
               </p>
             </div>
 
@@ -40,23 +49,38 @@ export default function ContactPage() {
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-gray-600">First Name</Label>
+                  <Label htmlFor="firstName" className="text-gray-600">
+                    First Name
+                  </Label>
                   <Input id="firstName" className="bg-white border-gray-400" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-gray-600">Last Name</Label>
+                  <Label htmlFor="lastName" className="text-gray-600">
+                    Last Name
+                  </Label>
                   <Input id="lastName" className="bg-white border-gray-400" />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-gray-600">Email</Label>
-                <Input id="email" type="email" className="bg-white border-gray-400" />
+                <Label htmlFor="email" className="text-gray-600">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  className="bg-white border-gray-400"
+                />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-gray-600">Message</Label>
-                <Textarea id="message" className="min-h-[150px] bg-white border-gray-400" />
+                <Label htmlFor="message" className="text-gray-600">
+                  Message
+                </Label>
+                <Textarea
+                  id="message"
+                  className="min-h-[150px] bg-white border-gray-400"
+                />
               </div>
             </div>
           </div>
@@ -69,9 +93,10 @@ export default function ContactPage() {
             {/* Contact Details */}
             <div className="space-y-6">
               <p className="text-xl text-gray-700">
-                Or contact me: <span className="font-bold text-[#1e3a8a]">Sanjiv Ranchod</span>
+                Or contact me:{" "}
+                <span className="font-bold text-[#1e3a8a]">Sanjiv Ranchod</span>
               </p>
-              
+
               <div className="space-y-4 text-gray-700">
                 <p>Tel: +27 (0)41 368 5700</p>
                 <p>
@@ -102,16 +127,15 @@ export default function ContactPage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-64 h-64 overflow-hidden rounded-xl bg-gray-200">
                 {/* Placeholder for Sanjiv's image */}
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <span className="text-sm">Sanjiv Ranchod Image</span>
-                </div>
+              
                 {/* Uncomment and update src when image is available */}
-                {/* <Image 
-                  src="/images/sanjiv.jpg" 
-                  alt="Sanjiv Ranchod" 
-                  fill 
-                  className="object-cover"
-                /> */}
+                <Image
+                  src="/images/company-logos/ranchod.jpg"
+                  alt="Company Foundation"
+                  width={800}
+                  height={500}
+                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                />
               </div>
             </div>
           </div>

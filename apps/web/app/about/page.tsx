@@ -26,7 +26,19 @@ export default function AboutPage() {
               <h2 className="text-3xl font-semibold text-gray-900 mb-4">
                 Our Foundation
               </h2>
-              <p className="text-gray-700 leading-relaxed">
+             
+              <Image
+                src="/images/company-logos/ranchod.jpg"
+                alt="Company Foundation"
+                width={800}
+                height={500}
+                className="w-full aspect-square object-cover rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Professional Qualifications */}
+            <div className="bg-gray-50 p-8 rounded-lg">
+               <p className="text-gray-700 leading-relaxed">
                 The consultancy was established by Sanjiv Ranchod in 2003 after
                 gaining valuable experience in many sectors of the business
                 world. We offer added value to clients through our strong skill
@@ -41,10 +53,6 @@ export default function AboutPage() {
                 us to provide comprehensive solutions tailored to each client's
                 unique needs.
               </p>
-            </div>
-
-            {/* Professional Qualifications */}
-            <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 Professional Qualifications
               </h3>

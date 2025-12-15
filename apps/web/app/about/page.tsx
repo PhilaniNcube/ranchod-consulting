@@ -119,7 +119,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Automotive Industry Development Centre", logo: "/images/company-logos/aidc.webp" },
+           
               { name: "East Cape Automotive Industry Cluster (DEDEAT)", logo: "/images/company-logos/DEDEAT.webp" },
               { name: "Imizi Housing Utility", logo: "/images/company-logos/imizi.webp" },
               { name: "Automotive Industry Development Centre (AIDC - EC)", logo: "/images/company-logos/aidc-ec.webp" },
@@ -129,16 +129,16 @@ export default function AboutPage() {
               { name: "Volkswagen of SA", logo: "/images/company-logos/vw.webp" },
               { name: "Nelson Mandela Metropolitan Municipality Fleet management assessment", logo: "/images/company-logos/nmbm.webp" },
               { name: "East Cape Dept. of Health Pharma distribution and outsourcing", logo: "/images/company-logos/ecdh.webp" },
-              { name: "Nelspruit Municipality Fleet management review", logo: "/images/company-logos/nelspruit.webp" },
               { name: "Footloose Shoes (CC)", logo: "/images/company-logos/footloose.webp" },
               { name: "NYDA (National Youth Development Agency)", logo: "/images/company-logos/nyda.webp" },
               { name: "East Cape Legislature", logo: "/images/company-logos/ec-legislature.webp" },
               { name: "NMU (Nelson Mandela University)", logo: "/images/company-logos/nmu.webp" },
               { name: "Engeli Enterprise Development", logo: "/images/company-logos/engeli.webp" },
-              { name: "IDC", logo: "/images/company-logos/idc.webp" },
-              { name: "ECDC", logo: "/images/company-logos/ecdc.webp" },
-              { name: "NEFCORP", logo: "/images/company-logos/nerfcorp.webp" },
-              { name: "SEDFA", logo: "/images/company-logos/sefda.webp" },
+              { name: "IDC (Industrial Development Corporation)", logo: "/images/company-logos/idc.webp" },
+              { name: "ECDC (East Cape Development Corporation)", logo: "/images/company-logos/ecdc.webp" },
+              { name: "NEFCORP (NEF)", logo: "/images/company-logos/nerfcorp.webp" },
+              { name: "SEFDA (SEDA/SEFA)", logo: "/images/company-logos/sefda.webp" },
+              { name: "Nelson Mandela University Investment Company", logo: "/images/company-logos/nmu.webp" },
             ].map((company, index) => (
               <div
                 key={index}

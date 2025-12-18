@@ -125,8 +125,8 @@ export default function AboutPage() {
               { name: "Automotive Industry Development Centre (AIDC - EC)", logo: "/images/company-logos/aidc-ec.webp" },
               { name: "South African National Parks", logo: "/images/company-logos/sanparks.webp" },
               { name: "PriceWaterhouse Coopers (PWC)", logo: "/images/company-logos/pwc.webp" },
-              { name: "Kalan Truck and Driver", logo: "/images/company-logos/aidc.webp" },
-              { name: "Volkswagen of SA", logo: "/images/company-logos/vw.webp" },
+              { name: "Kalan Truck and Driver", logo: "/images/company-logos/Kalan.png" },
+              { name: "Volkswagen of SA", logo: "/images/company-logos/vw.jpg" },
               { name: "Nelson Mandela Metropolitan Municipality Fleet management assessment", logo: "/images/company-logos/nmbm.webp" },
               { name: "East Cape Dept. of Health Pharma distribution and outsourcing", logo: "/images/company-logos/ecdh.webp" },
               { name: "Footloose Shoes (CC)", logo: "/images/company-logos/footloose.webp" },
@@ -137,8 +137,8 @@ export default function AboutPage() {
               { name: "IDC (Industrial Development Corporation)", logo: "/images/company-logos/idc.webp" },
               { name: "ECDC (East Cape Development Corporation)", logo: "/images/company-logos/ecdc.webp" },
               { name: "NEFCORP (NEF)", logo: "/images/company-logos/nerfcorp.webp" },
-              { name: "SEFDA (SEDA/SEFA)", logo: "/images/company-logos/sefda.webp" },
-              { name: "Nelson Mandela University Investment Company", logo: "/images/company-logos/nmu.webp" },
+              { name: "SEDFA (SEDA/SEFA)", logo: "/images/company-logos/sefda.webp" },
+              { name: "Nelson Mandela University Investment Company", logo: "/images/company-logos/investment.webp" },
             ].map((company, index) => (
               <div
                 key={index}

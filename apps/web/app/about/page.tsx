@@ -28,7 +28,7 @@ export default function AboutPage() {
               </h2>
              
               <Image
-                src="/images/company-logos/ranchod.jpg"
+                src="/images/profile.webp"
                 alt="Company Foundation"
                 width={800}
                 height={500}

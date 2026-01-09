@@ -32,7 +32,7 @@ export default function AboutPage() {
                 alt="Company Foundation"
                 width={800}
                 height={500}
-                className="w-full aspect-square object-cover rounded-lg shadow-md"
+                className="w-full aspect-[1/1.5] object-cover rounded-lg shadow-md"
               />
             </div>
 

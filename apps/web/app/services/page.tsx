@@ -1,8 +1,21 @@
 "use client";
 
+import type { Metadata } from "next";
 import { services } from "@/utils/services";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Our Services",
+  description:
+    "Comprehensive consulting services for SMMEs including business strategy, financial management, operations optimization, marketing solutions, and more.",
+  openGraph: {
+    title: "Our Services - Ranchod Consulting",
+    description:
+      "Explore our wide range of professional consulting services designed to drive your business forward.",
+    type: "website",
+  },
+};
 
 function ServiceCard({
   service,

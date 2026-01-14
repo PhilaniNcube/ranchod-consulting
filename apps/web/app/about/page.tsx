@@ -1,6 +1,19 @@
 "use client";
 
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Ranchod Consulting, established in 2003. Professional consultants for the SMME business sector with a commitment to excellence and innovation.",
+  openGraph: {
+    title: "About Ranchod Consulting",
+    description:
+      "Professional consultants for the SMME business sector, established in 2003 with a commitment to excellence and innovation.",
+    type: "website",
+  },
+};
 
 export default function AboutPage() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Facebook,
   Instagram,
@@ -8,6 +9,18 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { ContactForm } from "@/components/contact-form";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Ranchod Consulting. Ready to take your business to the next level? Contact our expert team today for professional consulting services.",
+  openGraph: {
+    title: "Contact Ranchod Consulting",
+    description:
+      "Ready to take your business to the next level? Get in touch with our expert team today.",
+    type: "website",
+  },
+};
 
 export default function ContactPage() {
   return (

@@ -1,7 +1,3 @@
-import { Input } from "@workspace/ui/components/input";
-import { Textarea } from "@workspace/ui/components/textarea";
-import { Label } from "@workspace/ui/components/label";
-import { Button } from "@workspace/ui/components/button";
 import {
   Facebook,
   Instagram,
@@ -11,6 +7,7 @@ import {
   Phone,
 } from "lucide-react";
 import Image from "next/image";
+import { ContactForm } from "@/components/contact-form";
 
 export default function ContactPage() {
   return (
@@ -46,42 +43,8 @@ export default function ContactPage() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-gray-600">
-                    First Name
-                  </Label>
-                  <Input id="firstName" className="bg-white border-gray-400" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-gray-600">
-                    Last Name
-                  </Label>
-                  <Input id="lastName" className="bg-white border-gray-400" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-gray-600">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  className="bg-white border-gray-400"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-gray-600">
-                  Message
-                </Label>
-                <Textarea
-                  id="message"
-                  className="min-h-[150px] bg-white border-gray-400"
-                />
-              </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+                <ContactForm />
             </div>
           </div>
 

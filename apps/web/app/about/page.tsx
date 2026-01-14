@@ -163,10 +163,7 @@ export default function AboutPage() {
                       width={600}
                       height={400}
                       className="w-full h-full object-contain p-2"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(company.name.split(' ')[0] || company.name)}&background=D97706&color=fff&size=128`;
-                      }}
+                   
                     />
                   </div>
                   <p className="text-gray-700 text-sm font-medium text-center leading-tight">
